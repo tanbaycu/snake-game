@@ -16,15 +16,7 @@
 - **Customizable Gameplay:** Adjust difficulty and grid size (Version 2)
 - **Sleek UI:** Minimalist design with smooth animations
 
-<video width="640" height="360" controls>
-  <source src="https://i.imgur.com/NEdPPKv.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
-<video width="640" height="360" controls>
-  <source src="https://i.imgur.com/chZOGs6.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
 ## 🛠️ Tech Stack
 
@@ -42,10 +34,8 @@
 
 <details>
 <summary>Version 1: Classic Mode</summary>
-<video width="640" height="360" controls>
-  <source src="https://i.imgur.com/NEdPPKv.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+[![Demo here](https://i.postimg.cc/mk4vQQYJ/chrome-36-TZQNTjr-X.gif)](https://postimg.cc/bD6VPSF9)
 
 - Simple, intuitive controls
 - Progressively increasing difficulty
@@ -55,11 +45,8 @@
 
 <details>
 <summary>Version 2: Enhanced Experience</summary>
-<video width="640" height="360" controls>
-  <source src="https://i.imgur.com/chZOGs6.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
+[![Demo here](https://i.postimg.cc/j2hGvLv5/chrome-h-KWHyg-FQi5.gif)](https://postimg.cc/1VfC3Rkh)
 
 - Smooth, canvas-rendered graphics
 - Customizable speed and grid size
