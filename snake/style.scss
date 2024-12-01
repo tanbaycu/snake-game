@@ -1,0 +1,195 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background: darken(#00796B, 5%);	
+	font-family: 'Varela Round';
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 90%;
+	max-width: 400px;
+	border: 5px solid #FFA000;
+	border-radius: 3px;
+	box-shadow:  10px 10px 50px 15px rgba(black, 0.3);
+	background-color: #455A64;
+	position: relative;
+}
+
+.canvas-wrapper {
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	position: relative;
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #37474F;
+}
+
+.controls {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+button[class^="btn"] {
+	background-color: #FFA000;
+	padding: 5px 20px;
+	text-transform: uppercase;
+	font-family: 'Varela Round';
+	font-size: 14px;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	letter-spacing: 0.3em;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	box-shadow: 0 0 10px 5px rgba(black, 0.2);
+	outline: none;
+	cursor: pointer;
+	transition: box-shadow 0.3s, background 0.3s;
+	text-align: center;
+	
+	margin: 0 20px 0;
+	margin-bottom: 20px;
+	&:hover {
+		background: lighten(#FFA000, 10%);
+		box-shadow: 0 0 20px 5px rgba(black, 0.3);
+	}
+	
+	@media(min-width: 450px) {
+		& {
+			width: 150px;
+		}
+	}
+}
+
+button[disabled] {
+	background: darken(#FFA000, 10%);
+}
+
+.range {
+	width: 100%;
+	margin-bottom: 20px;
+	margin: 0 20px 20px;
+	
+	display: flex;
+	align-items: center;
+	
+	label {
+		color: white;
+		text-transform: uppercase;
+		margin-right: 20px;
+		width: 30%;
+	}
+	
+	&_inputWrapper {
+		width: 100%;
+		position: relative;
+		height: 20px;
+		background-color: #fff;		
+		box-shadow: 0 0 10px 5px rgba(black, 0.2);
+	}
+	
+	&_inputValue {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		color: white;
+		font-size: 14px;
+		height: 100%;
+		padding-left: 3px;
+		line-height: 20px;
+	}
+	
+	&_inputSlider {
+		transform-origin: left top;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #FFA000;
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		transform: scaleX(0);
+		transition: transform 0.2s ease-out;
+	}
+	
+	input {	
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		opacity: 0;
+		cursor: ew-resize;
+		z-index: 1
+	}
+}
+
+.score {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	opacity: 0.3;
+	text-transform: uppercase;
+	color: white;
+}
+
+.dpad {
+	width: 100px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	display: none;
+}
+
+button[class^="control"] {
+	background: #FFA000;
+	border: none;
+	border-radius: 3px;
+	
+	
+}
+
+.control-up {
+	display: block;
+}
+.control-down svg {
+	transform: rotate(180deg)
+}
+.control-left svg {
+	transform: rotate(90deg)
+}
+.control-right svg {
+	transform: rotate(-90deg)
+}
