@@ -16,6 +16,16 @@
 - **Customizable Gameplay:** Adjust difficulty and grid size (Version 2)
 - **Sleek UI:** Minimalist design with smooth animations
 
+<video width="640" height="360" controls>
+  <source src="https://i.imgur.com/NEdPPKv.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<video width="640" height="360" controls>
+  <source src="https://i.imgur.com/chZOGs6.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## 🛠️ Tech Stack
 
 | Technology | Version 1 | Version 2 |
